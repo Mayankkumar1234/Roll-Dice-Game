@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color:cornflowerblue;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.main-box{
+    height: 65%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20PX;
+    border-radius: 10px;
+    background: linear-gradient(ALICEBLUE,rgb(61, 136, 180),ORANGE,PINK);
+}
+.dices>img{
+    height: 220px;
+
+}
+.dices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.roll-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.score{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.rollDice>button{
+    padding: 10px  22px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:cadetblue;
+    color: aliceblue;
+    border: none;
+}
+.animation{
+    animation-name: animation;
+animation-duration: 2s;
+}
+@keyframes animation {
+   0%{transform: rotate(0deg);}
+   100%{transform: rotate(360deg);}
+   100%{opacity: 0;}
+}
